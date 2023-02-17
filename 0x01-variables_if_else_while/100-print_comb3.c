@@ -1,30 +1,28 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- * main - Print if number is positive, Zero or negative
- * Return: Always 0 (Success)
+ * main - a simple program that outputs 0-9 separated by commas
  *
+ * Return: 0 on success
  */
 int main(void)
 {
-        int a, b;
+	int i;
+	int j;
 
-        for (a = '0'; a < '9'; a++)
-        {
-                for (b = a + 1; b <= '9'; b++)
-                {
-                                if (a != b)
-                                {
-                                putchar(a);
-                                putchar(b);
-                                if (a == '8' && b == '9')
-                                continue;
-                                putchar(44);
-                                putchar(' ');
-                                }
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (i = 48; i < 57; i++)
+	{
+		for (j = i + 1; j < 58; j++)
+		{
+			putchar(i);
+			putchar(j);
+			if (i != 56 || j != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
