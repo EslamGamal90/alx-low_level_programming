@@ -14,5 +14,4 @@ _putchar('a');
 c++;
 }
 _putchar('\n');
-return (0);
 }
