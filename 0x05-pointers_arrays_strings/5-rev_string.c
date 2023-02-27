@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * rev_string - Function that returns the length of a string
+ *
+ * @s: this is the input string
+ *
+ *
+ */
+
+void rev_string(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	for (i = i - 1; i >= 0 ; i--)
+		{
+		_putchar(s[i]);
+		}
+		_putchar('\n');
+}
