@@ -1,29 +1,31 @@
 #include <stdio.h>
-
 /**
- * print_rev - Function that returns the length of a string
+ * rev_string - This fuction print a string reverser
  *
- * @s: this is the input string
- *
+ *@s: this is the pointer that point to a string
  */
 
 void rev_string(char *s)
 {
-	int i, x;
-	char *c = s;
-	char *z = s;
+	int a, len;
 
-	for (i = 0; s[i] != '\0'; i++)
-			{
-			z[i] = s[i];
-			_putchar(s[i]);
-			}
-			_putchar('\n');
-	for (i = i - 1, x = 0 ; i >= 0 ; i--, x++)
-		{
-		c[x] = s[i];
-		_putchar(s[i]);
-		s[i] = z[x];
-		}
-		_putchar('\n');
+	char *begin, *end = s;
+
+	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
+	{
+		end++;
+	}
+	len = a + 1;
+	begin = s;
+	for (a = 0; a < len / 2; a++)
+	{
+		char x;
+
+		x = *end;
+		*end = *begin;
+		*begin = x;
+		begin++;
+		end--;
+	}
+	end[len + 1] = '\0';
 }
