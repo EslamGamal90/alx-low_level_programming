@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * puts_half - This fuction print a string reverser
@@ -8,7 +7,9 @@
 
 void puts_half(char *str)
 {
-	for (int x = 0; s[i] != '\0'; x++)
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
 		{
 	if (i % 2 != 0)
 		{
@@ -16,4 +17,4 @@ void puts_half(char *str)
 		}
 		}
 		_putchar('\n');
-}
+}}
