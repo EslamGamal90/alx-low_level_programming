@@ -3,10 +3,9 @@
 
 /**
  * _puts - Function that returns the length of a string
- *stdout.
+ * stdout.
  * @str: this is the input string
  *
- * 
  */
 
 void _puts(char *str)
